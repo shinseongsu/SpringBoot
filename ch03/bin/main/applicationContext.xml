@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instace"
-	   xsi:schemaLocation="http://www.springframework.org/schema/beans
-	   http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
 	
-	<bean id="boss" class="basic.Boss"></bean>
-	<bean id="employee" class="basic.Employee"></bean>
+	<bean id="boss" class="main.java.basic.Boss"></bean>
+	<bean id="employee" class="main.java.basic.Employee"></bean>
 		   
-	<bean id="myWorkService" class="basic.WorkService">
+	<bean id="myWorkService" class="main.java.basic.WorkService">
 		<property name="workManager">
 			<ref bean="boss" />
 		</property>
 	</bean>	   
 	
-	<bean id="yourWorkService" class="basic.WorkService">
+	<bean id="yourWorkService" class="main.java.basic.WorkService">
 		<property name="workManager">
 			<ref bean="employee" />
 		</property>
