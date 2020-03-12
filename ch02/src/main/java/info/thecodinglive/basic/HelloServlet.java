@@ -1,4 +1,4 @@
-package java.info.thecodinglive.basic;
+package main.java.info.thecodinglive.basic;
 
 import java.io.IOException;
 import java.io.PrintWriter;

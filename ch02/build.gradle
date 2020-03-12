@@ -1,11 +1,3 @@
-apply plugin: 'java'
-apply plugin: 'war'
-
-apply plugin: 'org.akhikhl.gretty'
-
-apply plugin: 'eclipse'
-apply plugin: 'idea'
-
 buildscript{
     repositories {
         jcenter()
@@ -14,6 +6,13 @@ buildscript{
         classpath 'org.akhikhl.gretty:gretty:+'
     }
 }
+apply plugin: 'java'
+apply plugin: 'war'
+
+apply plugin: 'org.akhikhl.gretty'
+
+apply plugin: 'eclipse'
+apply plugin: 'idea'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -37,20 +36,11 @@ gretty{
 }
 
 
-def webappDir = "$rootDir/src/main/webapp"
+   def webappDir = "$rootDir/src/main/webapp"
 
 eclipse{
     classpath{
         downloadSources = true
         defaultOutputDir = file("${buildDir}/classes/main")
     }
-}
-
-idea{
-	module {
-		downloadSources = true
-		downloadJavadoc = false
-		inheritOutputDirs = false
-		outputDir = file("${buildDir}/classes/main")
-	}
 }
