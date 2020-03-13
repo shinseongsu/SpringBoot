@@ -14,6 +14,7 @@ public class XmlSpringApp {
 		yourWorkService.askWork();
 		
 		WorkService workService = context.getBean("myWorkService", WorkService.class);
+		workService.askWork();
 		
 		context.close();
 		
