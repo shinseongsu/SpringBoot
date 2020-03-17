@@ -1,4 +1,4 @@
-package main.java.info.thecodinglive.command;
+package info.thecodinglive.command;
 
 public class HomeView extends Command{
 

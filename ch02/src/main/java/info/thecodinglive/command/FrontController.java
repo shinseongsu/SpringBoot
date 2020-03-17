@@ -1,4 +1,4 @@
-package main.java.info.thecodinglive.command;
+package info.thecodinglive.command;
 
 import java.io.IOException;
 import java.io.InputStream;
